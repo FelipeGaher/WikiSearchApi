@@ -16,3 +16,7 @@ h1 {
 #theCard {
     background-color: hsl(240, 100%, 95%);
 }
+
+p{
+    margin-left: 9px;
+}
