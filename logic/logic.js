@@ -19,8 +19,14 @@ $(document).ready(function () {
 
                 $("#result").html("");
 
-                for (var i = 0; i < data[1].length; i++) {
-                    $("#result").prepend("<li class='list-group-item text-justify'><a target='blank' href=" + data[3][i] + ">" + data[1][i] + "</a><p class='text-justify'>" + data[2][i] + "</p></li>");
+                if (data[1].length !== 0) {
+
+                    for (var i = 0; i < data[1].length; i++) {
+                        $("#result").prepend("<li class='list-group-item text-justify'><a target='blank' href=" + data[3][i] + ">" + data[1][i] + "</a><p class='text-justify'>" + data[2][i] + "</p></li>");
+
+                    }
+                } else {
+                    $("#result").prepend("<li class='list-group-item text-justify'><a target='blank'>No matches found :( </a><p class='text-justify'></p></li>");
 
                 }
                 $("#searchTerm").val("");
