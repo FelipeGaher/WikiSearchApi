@@ -22,6 +22,10 @@ h1 {
     background-color: #243842;    
 }
 
+#searchTerm{
+    margin-bottom: 5px;
+}
+
 p{
     margin-left: 9px;
     margin-top: 16px;
