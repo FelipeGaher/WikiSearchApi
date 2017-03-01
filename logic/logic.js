@@ -16,7 +16,6 @@ $(document).ready(function () {
                 console.log(data);
 
                 $("#result").prepend(data[1][0]);
-
                 $("#result").html("");
                 
                 //if the API finds data
@@ -35,7 +34,7 @@ $(document).ready(function () {
                 $("#searchTerm").val("");
             },
             error: function (errorMessage) {
-
+                return "Something is not working, try again.";
             }
         });
 
