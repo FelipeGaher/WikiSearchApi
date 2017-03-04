@@ -13,7 +13,6 @@ $(document).ready(function () {
             async: false,
             dataType: "json",
             success: function (data) {
-                console.log(data);
 
                 $("#result").prepend(data[1][0]);
                 $("#result").html("");
